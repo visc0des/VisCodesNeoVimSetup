@@ -10,6 +10,7 @@ return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
 
+
 	-- [[ Include my packet statements below here ]]
 
 	-- For telescope.nvim 
