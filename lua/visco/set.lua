@@ -12,11 +12,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 
-<<<<<<< HEAD
--- Set width number 
-=======
 -- Setting number width
->>>>>>> d5e093312e3f4a1372b98f7561748ace9b8af376
 vim.opt.numberwidth = 1
 
 -- Disabling line wrapping
