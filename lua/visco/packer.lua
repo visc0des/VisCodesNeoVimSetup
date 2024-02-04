@@ -80,7 +80,7 @@ return require('packer').startup(function(use)
 				workspaces = {
 					{
 						name = "Main Vault - LV",
-						path = "C:\\Users\\Liethan Seth Velasco\\OneDrive\\Documents\\Obsidian Vaults - Synched\\Main Vault - LV",
+						path = "~/Documents/Obisdian Vaults - Synched/Main Vault - LV",
 					},
 				},
 

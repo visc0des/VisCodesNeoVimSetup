@@ -157,7 +157,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["obsidian.nvim"] = {
-    config = { "\27LJ\2\2Ð\1\0\0\4\0\6\0\v6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0004\2\3\0005\3\3\0>\3\1\2=\2\5\1B\0\2\1K\0\1\0\15workspaces\1\0\0\1\0\2\tpath_C:\\Users\\Liethan Seth Velasco\\OneDrive\\Documents\\Obsidian Vaults - Synched\\Main Vault - LV\tname\20Main Vault - LV\nsetup\robsidian\frequire\0" },
+    config = { "\27LJ\2\2«\1\0\0\4\0\6\0\v6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0004\2\3\0005\3\3\0>\3\1\2=\2\5\1B\0\2\1K\0\1\0\15workspaces\1\0\0\1\0\2\tpath:~/Documents/Obisdian Vaults - Synched/Main Vault - LV\tname\20Main Vault - LV\nsetup\robsidian\frequire\0" },
     loaded = true,
     path = "/home/visco/.local/share/nvim/site/pack/packer/start/obsidian.nvim",
     url = "https://github.com/epwalsh/obsidian.nvim"
@@ -194,7 +194,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: obsidian.nvim
 time([[Config for obsidian.nvim]], true)
-try_loadstring("\27LJ\2\2Ð\1\0\0\4\0\6\0\v6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0004\2\3\0005\3\3\0>\3\1\2=\2\5\1B\0\2\1K\0\1\0\15workspaces\1\0\0\1\0\2\tpath_C:\\Users\\Liethan Seth Velasco\\OneDrive\\Documents\\Obsidian Vaults - Synched\\Main Vault - LV\tname\20Main Vault - LV\nsetup\robsidian\frequire\0", "config", "obsidian.nvim")
+try_loadstring("\27LJ\2\2«\1\0\0\4\0\6\0\v6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0004\2\3\0005\3\3\0>\3\1\2=\2\5\1B\0\2\1K\0\1\0\15workspaces\1\0\0\1\0\2\tpath:~/Documents/Obisdian Vaults - Synched/Main Vault - LV\tname\20Main Vault - LV\nsetup\robsidian\frequire\0", "config", "obsidian.nvim")
 time([[Config for obsidian.nvim]], false)
 -- Config for: kanagawa
 time([[Config for kanagawa]], true)
