@@ -40,7 +40,7 @@ vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 
 -- Setting up global functions for other terminals 
 local Terminal = require("toggleterm.terminal").Terminal
-local lazygit = Terminal:new({ cmd = "git bash", hidden = true})
+local lazygit = Terminal:new({ cmd = "", hidden = true})
 
 function _LG_TOGGLE()
     lazygit:toggle()

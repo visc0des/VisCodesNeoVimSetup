@@ -95,17 +95,10 @@ return require('packer').startup(function(use)
         require("toggleterm").setup()
     end}
 
-    -- For lazygit 
-    -- nvim v0.7.2
-    use({
-        "kdheepak/lazygit.nvim",
-        requires = {
-            "nvim-telescope/telescope.nvim",
-            "nvim-lua/plenary.nvim",
-        },
-        config = function()
-            require("telescope").load_extension("lazygit")
-        end,
-    })
+    -- For bracket closer 
+    use "rstacruz/vim-closer"
+
+    -- For git-fugitive
+    use "tpope/vim-fugitive"
 
 end)
