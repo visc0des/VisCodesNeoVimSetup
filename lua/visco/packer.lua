@@ -80,7 +80,7 @@ return require('packer').startup(function(use)
 				workspaces = {
 					{
 						name = "Main Vault - LV",
-						path = "~/Documents/Obisdian Vaults - Synched/Main Vault - LV",
+						path = "",
 					},
 				},
 
@@ -101,4 +101,20 @@ return require('packer').startup(function(use)
     -- For git-fugitive
     use "tpope/vim-fugitive"
 
+    -- For markdown preview 
+    use({
+	    "iamcco/markdown-preview.nvim",
+	    run = function() vim.fn["mkdp#util#install"]() end,
+    })
+    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
+    -- For twilight and zen mode 
+    use "folke/twilight.nvim"
+    use "folke/zen-mode.nvim"
+
+    -- For pencil
+    use "preservim/vim-pencil"
+
+
+    
 end)
