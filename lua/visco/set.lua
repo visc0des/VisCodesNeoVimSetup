@@ -12,6 +12,9 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 
+-- Setting number width
+vim.opt.numberwidth = 1
+
 -- Disabling line wrapping
 vim.opt.wrap = false
 
