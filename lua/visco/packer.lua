@@ -96,8 +96,10 @@ return require('packer').startup(function(use)
     end}
 
     -- For bracket closer 
-    use "rstacruz/vim-closer"
-
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
     -- For git-fugitive
     use "tpope/vim-fugitive"
 
