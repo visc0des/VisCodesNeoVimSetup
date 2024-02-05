@@ -4,7 +4,7 @@
 function ColorMyPencils(color)
 
 	-- Default the color scheme
-	color = color or "kanagawa"
+	color = color or "tokyonight"
 	vim.cmd.colorscheme(color)
 
 	-- Making background transparent

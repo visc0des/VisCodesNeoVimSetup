@@ -22,7 +22,7 @@ return require('packer').startup(function(use)
 
 
 	-- For color plugin
-	use ({"rebelot/kanagawa.nvim", as = "kanagawa", config = function() vim.cmd('colorscheme kanagawa') end})
+	use ({"folke/tokyonight.nvim", as = "tokyonight", config = function() vim.cmd('colorscheme tokyonight') end})
 
 	-- Plugin for treesitter
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -96,8 +96,10 @@ return require('packer').startup(function(use)
     end}
 
     -- For bracket closer 
-    use "rstacruz/vim-closer"
-
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
     -- For git-fugitive
     use "tpope/vim-fugitive"
 
@@ -115,6 +117,12 @@ return require('packer').startup(function(use)
     -- For pencil
     use "preservim/vim-pencil"
 
+    -- For file tree 
+    use "nvim-tree/nvim-tree.lua"
+    use "nvim-tree/nvim-web-devicons"
+
+    -- For markdown syntaxc
+    use "tpope/vim-markdown"
 
     
 end)
