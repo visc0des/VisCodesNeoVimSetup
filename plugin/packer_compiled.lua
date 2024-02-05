@@ -114,12 +114,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Liethan Seth Velasco\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
-  kanagawa = {
-    config = { "\27LJ\2\n8\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\25colorscheme kanagawa\bcmd\bvim\0" },
-    loaded = true,
-    path = "C:\\Users\\Liethan Seth Velasco\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\kanagawa",
-    url = "https://github.com/rebelot/kanagawa.nvim"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Liethan Seth Velasco\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
@@ -194,6 +188,12 @@ _G.packer_plugins = {
     path = "C:\\Users\\Liethan Seth Velasco\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
+  tokyonight = {
+    config = { "\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme tokyonight\bcmd\bvim\0" },
+    loaded = true,
+    path = "C:\\Users\\Liethan Seth Velasco\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   ["twilight.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Liethan Seth Velasco\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\twilight.nvim",
@@ -217,10 +217,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: kanagawa
-time([[Config for kanagawa]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\25colorscheme kanagawa\bcmd\bvim\0", "config", "kanagawa")
-time([[Config for kanagawa]], false)
 -- Config for: obsidian.nvim
 time([[Config for obsidian.nvim]], true)
 try_loadstring("\27LJ\2\nv\0\0\5\0\6\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0004\3\3\0005\4\3\0>\4\1\3=\3\5\2B\0\2\1K\0\1\0\15workspaces\1\0\0\1\0\2\tname\20Main Vault - LV\tpath\5\nsetup\robsidian\frequire\0", "config", "obsidian.nvim")
@@ -233,6 +229,10 @@ time([[Config for toggleterm.nvim]], false)
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
+-- Config for: tokyonight
+time([[Config for tokyonight]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme tokyonight\bcmd\bvim\0", "config", "tokyonight")
+time([[Config for tokyonight]], false)
 -- Config for: tmux.nvim
 time([[Config for tmux.nvim]], true)
 try_loadstring("\27LJ\2\n.\0\0\3\0\3\0\0056\0\0\0'\2\1\0B\0\2\0029\0\2\0D\0\1\0\nsetup\ttmux\frequire\0", "config", "tmux.nvim")

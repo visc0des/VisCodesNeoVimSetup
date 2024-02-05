@@ -22,7 +22,7 @@ return require('packer').startup(function(use)
 
 
 	-- For color plugin
-	use ({"rebelot/kanagawa.nvim", as = "kanagawa", config = function() vim.cmd('colorscheme kanagawa') end})
+	use ({"folke/tokyonight.nvim", as = "tokyonight", config = function() vim.cmd('colorscheme tokyonight') end})
 
 	-- Plugin for treesitter
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
