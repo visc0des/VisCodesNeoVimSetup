@@ -121,6 +121,8 @@ return require('packer').startup(function(use)
     use "nvim-tree/nvim-tree.lua"
     use "nvim-tree/nvim-web-devicons"
 
+    -- For markdown syntaxc
+    use "tpope/vim-markdown"
 
     
 end)
