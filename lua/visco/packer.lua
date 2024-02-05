@@ -117,6 +117,12 @@ return require('packer').startup(function(use)
     -- For pencil
     use "preservim/vim-pencil"
 
+    -- For file tree 
+    use "nvim-tree/nvim-tree.lua"
+    use "nvim-tree/nvim-web-devicons"
+
+    -- For markdown syntaxc
+    use "tpope/vim-markdown"
 
     
 end)
