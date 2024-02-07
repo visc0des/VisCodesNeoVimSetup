@@ -138,7 +138,11 @@ return require('packer').startup(function(use)
     -- For vim easy motion
     use "easymotion/vim-easymotion"
 
-
+    -- For lua line
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 
     
 end)
