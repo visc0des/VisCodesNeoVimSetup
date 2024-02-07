@@ -124,5 +124,21 @@ return require('packer').startup(function(use)
     -- For markdown syntaxc
     use "tpope/vim-markdown"
 
+    -- For vim surround 
+    use({
+        "kylechui/nvim-surround",
+        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    })
+
+    -- For vim easy motion
+    use "easymotion/vim-easymotion"
+
+
+
     
 end)
