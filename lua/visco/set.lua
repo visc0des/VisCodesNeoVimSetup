@@ -1,6 +1,9 @@
 
 -- [[ Custom editor settings set immediately ]]
 
+-- Something that hopefully speeds up on Windows
+vim.g.nofsync = true
+
 -- Forcing line numbers 
 vim.opt.nu = true 
 vim.opt.relativenumber = true 
