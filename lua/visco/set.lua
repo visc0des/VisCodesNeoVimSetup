@@ -42,4 +42,5 @@ vim.opt.colorcolumn = "120"
 -- Global init of leader key 
 vim.g.mapleader = " "
 
-
+-- Setting fat cursor 
+vim.opt.guicursor = "n-v-i-c:block-Cursor"
