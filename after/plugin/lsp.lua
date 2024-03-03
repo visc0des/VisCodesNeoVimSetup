@@ -30,7 +30,7 @@ lspconfig.pylsp.setup({
             plugins = {
                 pycodestyle = {
                     ignore = {'E703'}, -- Ignore semicolons
-                    maxLineLength = 100,
+                    maxLineLength = 120,
                 },
             },
         },
