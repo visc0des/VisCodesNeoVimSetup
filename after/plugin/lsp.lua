@@ -25,6 +25,16 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 local lspconfig = require("lspconfig");
 
 lspconfig.pylsp.setup({
+    settings = {
+        pylsp = {
+            plugins = {
+                pycodestyle = {
+                    ignore = {'E703'}, -- Ignore semicolons
+                    maxLineLength = 100,
+                },
+            },
+        },
+    },
     capabilities = capabilities,
     filetypes = {"python"},
 })
@@ -44,6 +54,7 @@ require('mason-lspconfig').setup({
     end,
   }
 })
+
 
 
 -- Mason tool installer here: For the linter, formatter, and debugger plugins for LSP servers above. --
