@@ -1,5 +1,6 @@
 
 -- [[TAKEN FROM LSP ZERO REPO ]]
+-- https://lsp-zero.netlify.app/v3.x/tutorial.html <-- This has a tutorial on how to set up LSPs in lsp-zero
 
 local lsp_zero = require('lsp-zero')
 
@@ -18,11 +19,23 @@ lsp_zero.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+local lspconfig = require("lspconfig");
+
+lspconfig.pylsp.setup({
+    capabilities = capabilities,
+    filetypes = {"python"},
+})
+
 -- to learn how to use mason.nvim with lsp-zero
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guides/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'rust_analyzer'},
+  ensure_installed = {
+      'pylsp'
+  },
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
@@ -30,6 +43,23 @@ require('mason-lspconfig').setup({
       require('lspconfig').lua_ls.setup(lua_opts)
     end,
   }
+})
+
+
+-- Mason tool installer here: For the linter, formatter, and debugger plugins for LSP servers above. --
+require ('mason-tool-installer').setup({
+
+    ensure_installed = {
+
+        -- For pylsp (probably not all of them getting used, but will keep them all for now). 
+        'black',
+        'debugpy',
+        'flake8',
+        'isort',
+        'mypy',
+        'pylint',
+        'ruff'
+    }
 })
 
 local cmp = require('cmp')
@@ -48,6 +78,8 @@ cmp.setup({
     ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
     ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
     ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-    ['<C-Space>'] = cmp.mapping.complete(),
+    ['<C-Space>'] = cmp.mapping.complete(),                 -- triggers completion menu
   }),
 })
+
+

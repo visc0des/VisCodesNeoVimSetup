@@ -38,10 +38,12 @@ return require('packer').startup(function(use)
 		requires = {
 
 			--- Uncomment the two plugins below if you want to manage the language servers from neovim
+
 			-- LSP Support
 			{'williamboman/mason.nvim'},
 			{'williamboman/mason-lspconfig.nvim'},
 			{'neovim/nvim-lspconfig'},
+            {"nvimtools/none-ls.nvim"}, -- replaces null-ls, 
 
 			-- Autocompletion
 			{'hrsh7th/nvim-cmp'},
@@ -52,13 +54,13 @@ return require('packer').startup(function(use)
 			{'saadparwaiz1/cmp_luasnip'},
 			{'L3MON4D3/LuaSnip'},
 			{'rafamadriz/friendly-snippets'},
-			-- Other ones from primeagen's setup
-			{'williamboman/mason.nvim'},
-			{"williamboman/mason-lspconfig.nvim"},
-			{"neovim/nvim-lspconfig"},
 
+            -- For spell checking in latex 
+            {"valentjn/ltex-ls"},
 		}
 	}
+    -- For tool installers
+    use 'WhoIsSethDaniel/mason-tool-installer.nvim'
 
 	-- For Tmux
 	use({
@@ -147,6 +149,7 @@ return require('packer').startup(function(use)
     
     -- For LaTeX in Vim 
     use 'lervag/vimtex'
+
 
     
 end)

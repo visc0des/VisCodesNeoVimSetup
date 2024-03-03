@@ -42,5 +42,8 @@ vim.opt.colorcolumn = "120"
 -- Global init of leader key 
 vim.g.mapleader = " "
 
+-- Disable leader key in normal and visual mode
+vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>')
+
 -- Setting fat cursor 
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
