@@ -88,6 +88,12 @@ vim.opt.updatetime = 50
 -- Setting a colour column 
 vim.opt.colorcolumn = "120"
 
+-- Disable leader key in normal and visual mode
+vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>')
+
+-- Setting fat cursor 
+vim.opt.guicursor = "n-v-i-c:block-Cursor"
+
 
 -----------------------------------------------------------------------
 
@@ -100,6 +106,7 @@ vim.opt.colorcolumn = "120"
 vim.keymap.set("n", "<leader>zm", vim.cmd.ZenMode)
 
 ------------------------------------------------------
+
 
 
 

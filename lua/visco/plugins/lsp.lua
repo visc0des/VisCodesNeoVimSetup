@@ -8,14 +8,14 @@ return {
 
     -- Installing the many dependencies
     dependencies = {
-        
+
         -- LSP Support
         {'williamboman/mason.nvim'},
         {'williamboman/mason-lspconfig.nvim'},
         {'WhoIsSethDaniel/mason-tool-installer.nvim'},
         {'neovim/nvim-lspconfig'},
         {"nvimtools/none-ls.nvim"}, -- replaces null-ls, 
-        
+ 
         -- Autocompletion
         {'hrsh7th/nvim-cmp'},
         {'hrsh7th/cmp-nvim-lsp'},
@@ -117,6 +117,7 @@ return {
         })
 
         -----------------------------------------------
+
 
 
 
