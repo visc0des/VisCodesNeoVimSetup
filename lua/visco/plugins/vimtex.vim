@@ -24,4 +24,3 @@ let g:vimtex_compiler_progname = 'nvr' " Enable nvr for neovim to have backsearc
 " see ":help vimtex-compiler".
 let g:vimtex_compiler_method = 'latexmk'
 
-
