@@ -1,4 +1,7 @@
 
+" If on a fresh Linux Ubuntu machine, ensure to install Okular in the software store,
+" then install latexmk using `sudo apt install latexmk`. That should get things to work. 
+
 " -- COPIED FROM ONLINE REPO --
 
 " This is necessary for VimTeX to load properly. The "indent" is optional.
