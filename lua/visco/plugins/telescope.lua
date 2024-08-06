@@ -3,7 +3,7 @@
 return {
 
     -- Import the plugin
-    "nvim -telescope/telescope.nvim",
+    "nvim-telescope/telescope.nvim",
 
     -- Importing the dependencies
     dependencies = {
