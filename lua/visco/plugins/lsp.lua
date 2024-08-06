@@ -105,6 +105,10 @@ return {
 
         ----------- Latex LSP Configuration ----------- 
 
+        -- On linux, may need to download java JRE and SDK to set JAVA_HOME global var for this lsp to work. Use "sudo apt install default-jre" and 
+        -- "sudo apt install default-jdk" respectively. Then, find location of executable using 'readlink -f `which javac` | sed "s:/bin/javac::"', 
+        -- and set JAVA_HOME global variable in .bashrc by writing `export JAVA_HOME=[path to executable]`. 
+
         lspconfig.ltex.setup({
             on_attach = on_attach,
             settings = {
